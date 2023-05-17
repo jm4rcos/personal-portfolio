@@ -7,11 +7,24 @@ import Banner from "../../components/Banner";
 import { Project } from "../Project";
 
 export const LandingPage = () => {
-  
+  function handleClick(event, id) {
+    console.log(event, id);
+    event.preventDefault();
+    const element = document.getElementById(id);
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+
+  useEffect(() => {
+    const aboutElement = document.getElementById("about");
+    if (aboutElement) {
+      aboutElement.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
 
   return (
     <Container>
-      <div
+      {/* <div
+        className="menu"
         style={{
           width: "100%",
           display: "flex",
@@ -20,17 +33,26 @@ export const LandingPage = () => {
           justifyContent: "right",
         }}
       >
-        <a style={{ textDecoration: "none" }} href="#projects">
+        <a
+          onClick={(e) => handleClick(e, "projects")}
+          style={{ textDecoration: "none" }}
+          href="#projects"
+        >
           <Text>See Projects</Text>
         </a>
-        <a style={{ textDecoration: "none" }} href="#about">
+        <a
+          onClick={(e) => handleClick(e, "about")}
+          style={{ textDecoration: "none" }}
+          href="#about"
+        >
           <Text>About me</Text>
         </a>
-      </div>
+      </div> */}
       <Banner />
       <CanvasComponent />
       <Project name="About" id="about" />
-      <About name="About" id="about" />
+      <About name="Projects" id="projects" />
     </Container>
   );
 };
+

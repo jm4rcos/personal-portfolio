@@ -50,7 +50,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Content = styled.p`
+export const Content = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 1.5em;

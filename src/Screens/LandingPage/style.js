@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 
 export const Container = styled.div`
@@ -6,6 +6,7 @@ export const Container = styled.div`
   width: 100%;
   position: relative;
   background: #999;
+
 
   a{
     :visited{
@@ -78,7 +79,6 @@ export const Container = styled.div`
 `;
 
 export const Text = styled.p`
-  /* color: #fff; */
   position: relative;
 
   :hover {

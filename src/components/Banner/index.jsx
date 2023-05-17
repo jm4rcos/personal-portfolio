@@ -12,7 +12,6 @@ export default function Banner() {
           position: "absolute",
           zIndex: 500,
           backgroundColor: "transparent",
-          // marginTop: "5.5rem",
           justifyContent: "center",
         }}
       >
@@ -20,7 +19,7 @@ export default function Banner() {
           style={{
             display: "flex",
             alignItems: "center",
-            width: "50%",
+            width: "70%",
             gap: "2rem",
             zIndex: 100,
             backgroundColor: "transparent",

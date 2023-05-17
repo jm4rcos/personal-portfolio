@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  @media (max-width: 1360px) {
+export const Container = styled.section`
+  @media (max-width: 1390px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,7 +10,7 @@ export const Container = styled.div`
   `;
 
 export const Content = styled.div`
-  @media (max-width: 1360px) {
+  @media (max-width: 1390px) {
     flex-direction: column;
     align-items: center;
   }
@@ -20,8 +20,10 @@ export const Content = styled.div`
   gap: 2rem;
   margin-bottom: 4rem;
 
-
   .project-description {
+    @media (max-width: 1390px) {
+      width: 100%;
+    }
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -37,6 +39,9 @@ export const Content = styled.div`
   }
 
   .project-image {
+    @media (max-width: 1390px) {
+      width: 100%;
+    }
     width: 50%;
     display: flex;
     border-radius: 10px;
@@ -49,7 +54,7 @@ export const Content = styled.div`
     }
   }
 
-  .project-info{
+  .project-info {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -60,6 +65,8 @@ export const Content = styled.div`
 `;
 
 export const Name = styled.p`
+width: 100%;
+text-align: left;
   font-size: 2em;
   color: #fff;
   font-family: "Raleway", sans-serif;

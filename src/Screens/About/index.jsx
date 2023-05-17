@@ -23,7 +23,7 @@ export const About = () => {
             <Content>
               <Title>Main Skills</Title>
               <Skill>
-                HTML, CSS, JavaScript, React, TypeScript, NodeJS, Webpack, ThreeJS
+                HTML, CSS, JavaScript, React, TypeScript, NodeJS
               </Skill>
               <Skill>C#, .NET, ASP.NET</Skill>
               <Skill>Postgres, MySQL, AWS, Azure, Docker, API Rest, Git, Linux</Skill>

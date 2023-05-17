@@ -11,10 +11,10 @@ function App() {
       <LandingPage />
       <div className="social-icons">
         <div className="linkedin-icon">
-          <GrLinkedin size={26} color="#fff" />
+          <GrLinkedin size={26} color="#fff" onClick={() => window.open("https://www.linkedin.com/in/joaom4rcosg/")}/>
         </div>
         <div className="github-icon">
-          <FiGithub size={26} color="#fff" />
+          <FiGithub size={26} color="#fff" onClick={() => window.open("https://github.com/jm4rcos")}/>
         </div>
       </div>
     </div>

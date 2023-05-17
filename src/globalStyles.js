@@ -9,6 +9,8 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Fira Code', monospace;
     text-align: left;
     font-size: 16px;
+  }
+  html{
     scroll-behavior: smooth;
   }
 

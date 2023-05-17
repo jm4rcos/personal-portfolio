@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Bracket = styled.p`
+export const Bracket = styled.div`
   font-size: 1em;
   font-family: "Fira Code", monospace;
   color: #2c96e4;
